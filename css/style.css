@@ -54,7 +54,7 @@
     background-image: url(../img/fondo1.png);
     background-size: cover;
     height: 100vh;
-    position: relative; 
+    /* position: relative; */
 }
 .container-head::after{ /*COLOR DE FONDO DEL BACKGROUND*/
     content: '';
@@ -92,7 +92,6 @@
 }
 .fa-caret-down:hover{
     color: var(--gray-color);
-    /* opacity: 0.8; */
 }
 .fa-caret-down.active{
     color: red;
@@ -111,18 +110,18 @@
     bottom: 0;
     right: 0;
     left: 855px;
-    z-index: 2;
+    z-index: 3;
     width: 280px;
-    display: none;
+    visibility: hidden;
 }
 .products-list.active{
-    display: block;
+    visibility: visible;
 }
 .subproducts-list{
     display: flex;
     flex-direction: column;;
     background-color: rgb(255, 255, 255, 1);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     width: 280px;
     justify-content: center;
     margin: 5px 0;
@@ -158,33 +157,33 @@
     height: 90px;
 }
 
-.text-header{
-    height: 679px; /*SE INGRESA UNA ALTURA APROX*/
+.container-text-header{
+
     width: 700px;
-    margin: 0 auto;
-    display: flex;
+    margin: auto;
+    
+    position: relative; 
+    z-index: 2;
+    top: -150px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.text-header{
+    width: 700px;
+    height: 150px;
+    justify-content: center;
     align-items: center;
     text-align: center;
-    
-    position: relative; /*ESTA PARTE ES PARA RESALTA LAS PALABRAS Y QUE NO QUEDEN POR DEBAJO DEL COLOR DE FONDO*/
-    z-index: 1;
-
-    display: none; /*--------------------------BORRAR-----------*/
 }
-.text-header-content{
-    width: 700px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.text-header-titulo{
+.header-titulo{
     font-size: 60px; /*TAMAÑO DE LETRA*/
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.text-header-subtext{
+.header-subtext{
     width: 725px;
     font-size: 24px; /*TAMAÑO DE LETRA*/
     color: #fff;
