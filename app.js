@@ -16,12 +16,31 @@ let btnAbrirPopup1 = document.getElementById("imgcert1"),
     popup4 = document.getElementById("popup4"),
     popup5 = document.getElementById("popup5"),
     popup6 = document.getElementById("popup6"),
-    btnCerrarPopup1 = document.getElementById("btn-cerrar-popup1");
-    btnCerrarPopup2 = document.getElementById("btn-cerrar-popup2");
-    btnCerrarPopup3 = document.getElementById("btn-cerrar-popup3");
-    btnCerrarPopup4 = document.getElementById("btn-cerrar-popup4");
-    btnCerrarPopup5 = document.getElementById("btn-cerrar-popup5");
-    btnCerrarPopup6 = document.getElementById("btn-cerrar-popup6");
+    btnCerrarPopup1 = document.getElementById("btn-cerrar-popup1"),
+    btnCerrarPopup2 = document.getElementById("btn-cerrar-popup2"),
+    btnCerrarPopup3 = document.getElementById("btn-cerrar-popup3"),
+    btnCerrarPopup4 = document.getElementById("btn-cerrar-popup4"),
+    btnCerrarPopup5 = document.getElementById("btn-cerrar-popup5"),
+    btnCerrarPopup6 = document.getElementById("btn-cerrar-popup6"),
+
+    btnMenu = document.getElementById("btn-menu");
+    btnHeadMenu = document.getElementById("button-headmenu")
+
+// -------------ABRIR MENU HEAD----------------
+function abrirMenu(){
+    if(btnMenu.className != "products-list active"){
+        btnMenu.classList.add('active');
+
+        btnHeadMenu.style.transform = "rotate(180deg)"
+        btnHeadMenu.style.padding = "0px 5px 3px 0px"
+            
+    }else{
+        btnMenu.classList.remove('active');
+
+        btnHeadMenu.style.transform = "rotate(0deg)"
+        btnHeadMenu.style.padding = "0px 0px 0px 5px"
+    }
+}
 
 // --------------ABRIR POPUP----------
 btnAbrirPopup1.addEventListener('click', function(){

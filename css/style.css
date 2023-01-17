@@ -66,7 +66,6 @@
     left: 0;
     right: 0;
 }
-
 .container-navbar{
     max-width: 1200px;
     margin: 0 auto;
@@ -76,7 +75,7 @@
     align-items: center;
 
     position: relative; /*ESTA PARTE ES PARA RESLATRA LAS PALABRAS Y QUE NO QUEDEN POR DEBAJO DEL COLOR DE FONDO*/
-    z-index: 1;
+    z-index: 2;
 }
 .nav-bar a{
     font-size: 24px; /*TAMAÑO DE LETRA*/
@@ -85,13 +84,82 @@
     text-decoration: none;
     outline: none;
 }
+.fa-caret-down{
+    padding-left: 5px;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+.fa-caret-down:hover{
+    color: var(--gray-color);
+    /* opacity: 0.8; */
+}
+.fa-caret-down.active{
+    color: red;
+}
+
+.list-navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.products-list{
+    position: relative;
+    top: -35px;
+    bottom: 0;
+    right: 0;
+    left: 855px;
+    z-index: 2;
+    width: 280px;
+    display: none;
+}
+.products-list.active{
+    display: block;
+}
+.subproducts-list{
+    display: flex;
+    flex-direction: column;;
+    background-color: rgb(255, 255, 255, 1);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 280px;
+    justify-content: center;
+    margin: 5px 0;
+}
+.subproducts-list a{
+    text-decoration: none;
+    font-size: 20px;
+    list-style: none;
+    padding: 10px 0px 10px 40px;
+    text-decoration: none;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    
+    position: relative;
+}
+.subproducts-list a:hover{
+    color: var(--secundary-color);
+}
+.subproducts-list li::after{
+    content: " ";
+    position: absolute;
+    background-color: var(--secundary-color);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    top: 17px;
+    bottom: 0;
+    left: 15px;
+    right: 0;
+}
 .logo-header{
     height: 90px;
 }
 
 .text-header{
     height: 679px; /*SE INGRESA UNA ALTURA APROX*/
-
     width: 700px;
     margin: 0 auto;
     display: flex;
@@ -100,6 +168,8 @@
     
     position: relative; /*ESTA PARTE ES PARA RESALTA LAS PALABRAS Y QUE NO QUEDEN POR DEBAJO DEL COLOR DE FONDO*/
     z-index: 1;
+
+    display: none; /*--------------------------BORRAR-----------*/
 }
 .text-header-content{
     width: 700px;
@@ -137,44 +207,6 @@
     /* position: relative;
     overflow: hidden; */
 }
-/* .button-head::before{
-    content: "";
-    background-image: conic-gradient(
-        #ffffff 20deg,
-        transparent 120deg
-    );
-    width: 1000%;
-    height: 1000%;
-    position: absolute;
-    animation: rotate 1s linear infinite;
-}
-
-.button-head::after{
-    content: "READ MORE";
-    width: 240px;
-    height: 50px;
-    background-color: var(--primary-color);
-    position: absolute;
-    border-radius: 50px;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    font-size: 20px;
-}
-
-@keyframes rotate {
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(-360deg);
-    }
-} */
-
-
-
 
 .header-button{
     cursor: pointer;
