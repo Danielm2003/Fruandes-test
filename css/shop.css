@@ -1,0 +1,49 @@
+.container-message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-shop{
+    background-color: var(--gray-color);
+    width: 1000px;
+    height: 500px;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    margin: 60px 0;
+
+    padding: 30px 80px;
+}
+.container-logo-shop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-logo-shop img{
+    height: 130px;
+}
+
+.container-text-shop{
+    height: 305px;
+    display: flex;
+    justify-content: center;
+}
+.text-shop{
+    display: grid;
+    justify-self: center;
+    align-self: center; 
+}
+.text-shop h1{
+    font-size: 50px;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 20px;
+}
+.text-shop h3{
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+}
+
+.header{
+    background-color: aqua;
+}

@@ -1,0 +1,80 @@
+*, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* .container{
+    background: #fff;
+    width: 100%;
+    height: 100%;
+} */
+
+:root{
+    --primary-color: #333e21;
+    --secundary-color: #a49d34;
+    --footer-color: #d7d7d7;
+    --gray-color: #d7d7d7;
+    --second-gray-color: #a7a7a7;
+    --orange-color: #e08f26;
+}
+
+.raleway300{ /*TIPO DE LETRA*/
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+.raleway400{ /*TIPO DE LETRA*/
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+.raleway500{ /*TIPO DE LETRA*/
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+.raleway600{ /*TIPO DE LETRA*/
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+.raleway700{ /*TIPO DE LETRA*/
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+.raleway800{ /*TIPO DE LETRA*/
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+}
+.raleway900{ /*TIPO DE LETRA*/
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+}
+
+.right{
+    float: right;
+    
+}
+.left{
+    float: left;
+}
+
+
+/* ---------------------FOOTER-------------- */
+.footer{
+    position: relative;
+    height: 275px !important;
+}
+.footer-import{
+    position: absolute;
+    width: 100% !important;
+    height: 100%;
+}
+
+
+/* --------------------HEADER------------------------ */
+.header{
+    position: relative;
+    height: 420px !important;
+}
+.header-import{
+    position: absolute;
+    width: 100% !important;
+    height: 100%;
+}

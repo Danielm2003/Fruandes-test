@@ -1,0 +1,152 @@
+.header-goldenberry{
+    background-color: aqua;
+}
+
+/*---SECCION1---*/
+.fruit{
+    display: flex;
+    flex-direction: row;
+    height: 360px;
+    align-items: center;
+    background-color: #f7f4ee;
+}
+.fruit-description-img{
+    display: flex;
+    width: 50%;
+}
+.img-desc{
+    height: 360px;
+    width: 100%;
+}
+
+.fruit-description{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    /* width: 50%; */
+    width: 660px;
+    background-color: #f7f4ee;
+    padding: 30px 30px;
+}
+.title-fruit{
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.fruandes-departament{
+    height: 100%;
+    width: auto;
+}
+.fruit-description-text{
+    height: 100%;
+}
+.fruit-description-text p{
+    font-size: 20px;
+}
+
+.extension-product{
+    display:block;
+    margin:auto;
+}
+
+
+/*---SECCION2---*/
+.container-community{
+    display: flex;
+    max-width: 1200px;
+    padding: 0;
+    margin: 0 auto;
+    align-items: center;
+}
+.sub-left{
+    width: 50%;
+}
+.sub-right{
+    width: 50%;
+}
+.title-community{
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    color: var(--orange-color);
+    padding-bottom: 20px;
+}
+.leader{
+    display: flex;
+    height: 250px;
+}
+.container-leader-img{
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.leader-img{
+    border-radius: 50%;
+    height: 75%;
+    display: flex;
+    padding-right: 15px;
+}
+.leader-name{
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    padding-left: 15px;
+    text-align: center;
+    align-items: center;
+    font-size: 24px;
+    color: var(--orange-color);
+}
+.leader-text{
+    padding: 0 15px;
+}
+.leader-text p{
+    font-size: 20px;
+}
+
+.text-list{
+    width: 100%;
+    padding: 30px 15px;
+}
+.text-list li{
+    list-style: none;
+    padding: 0 15px 0 20px;
+    color: #000;
+    font-size: 20px;
+
+    position: relative;
+}
+li::after{
+    content: " ";
+    position: absolute;
+    background-color: var(--orange-color);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    top: 7px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/*---VIDEO---*/
+.video-fruit{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    
+    background-color: aqua;
+    width: 1000px;
+    height: 560px;
+}
+
+/*TEXT2*/
+.fruit-text2{
+    width: 1200px;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
