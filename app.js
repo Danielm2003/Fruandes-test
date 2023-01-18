@@ -23,24 +23,45 @@ let btnAbrirPopup1 = document.getElementById("imgcert1"),
     btnCerrarPopup5 = document.getElementById("btn-cerrar-popup5"),
     btnCerrarPopup6 = document.getElementById("btn-cerrar-popup6"),
 
-    btnMenu = document.getElementById("btn-menu");
-    btnHeadMenu = document.getElementById("button-headmenu")
+    btndMenuHome = document.getElementById("button-menu"), /*PRINCIPAL PAGE*/
+    menuHome = document.getElementById("menu"), /*PRINCIPAL PAGE*/
 
+     /*HEADER PAGES*/
+    btnMenuHead = document.getElementById("button-menu-products"),
+    menuProducts = document.getElementById("menu-products") 
+    
 // -------------ABRIR MENU HEAD----------------
 function abrirMenu(){
-    if(btnMenu.className != "products-list active"){
-        btnMenu.classList.add('active');
+    if(menuHome.className != "products-list active"){
+        menuHome.classList.add('active');
 
-        btnHeadMenu.style.transform = "rotate(180deg)"
-        btnHeadMenu.style.padding = "0px 5px 3px 0px"
-            
+        btndMenuHome.style.transform = "rotate(180deg)"
+        btndMenuHome.style.padding = "0px 5px 3px 0px"
+
     }else{
-        btnMenu.classList.remove('active');
+        menuHome.classList.remove('active');
 
-        btnHeadMenu.style.transform = "rotate(0deg)"
-        btnHeadMenu.style.padding = "0px 0px 0px 5px"
+        btndMenuHome.style.transform = "rotate(0deg)"
+        btndMenuHome.style.padding = "0px 0px 0px 5px"
     }
 }
+
+function abrirMenu2(){
+    if(menuProducts.className != "products-list-head active"){
+        menuProducts.classList.add('active');
+
+        btnMenuHead.style.transform = "rotate(180deg)"
+        btnMenuHead.style.padding = "0px 5px 3px 0px"
+            
+    }else{
+        menuProducts.classList.remove('active');
+
+        btnMenuHead.style.transform = "rotate(0deg)"
+        btnMenuHead.style.padding = "0px 0px 0px 5px"
+    }
+
+}
+
 
 // --------------ABRIR POPUP----------
 btnAbrirPopup1.addEventListener('click', function(){

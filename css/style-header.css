@@ -1,44 +1,113 @@
+
 /* HEADER */
+.container-head{
+    background-color: #fff;
+}
 
 .container-navbar{
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto;
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    position: relative; /*ESTA PARTE ES PARA RESLATRA LAS PALABRAS Y QUE NO QUEDEN POR DEBAJO DEL COLOR DE FONDO*/
-    z-index: 1;
-}
-.container-navbar a{
-    padding: 0;
-    margin: 0;
+    /* position: relative;
+    z-index: 2; */
 }
 .nav-bar a{
-    font-size: 24px; /*TAMAÑO DE LETRA*/
+    font-size: 24px;
     color: var(--primary-color);
     margin-left: 40px;
     text-decoration: none;
     outline: none;
 }
+.fa-caret-down{
+    padding-left: 5px;
+    color: var(--primary-color);
+    font-size: 24px;
+    cursor: pointer;
+}
+.fa-caret-down:hover{
+    color: var(--secundary-color);
+}
+.fa-caret-down.active{
+    color: red;
+}
+
+.list-navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.products-list-head{
+    visibility: hidden;
+    position: absolute;
+    top: 70px;
+    bottom: 0;
+    right: 0;
+    left: 855px;
+    z-index: 3;
+    width: 280px;
+}
+.products-list-head.active{
+    visibility: visible;
+}
+.subproducts-list{
+    display: flex;
+    flex-direction: column;;
+    background-color: rgb(255, 255, 255, 1);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 280px;
+    justify-content: center;
+    margin: 5px 0;
+}
+.subproducts-list a{
+    text-decoration: none;
+    font-size: 20px;
+    list-style: none;
+    padding: 10px 0px 10px 40px;
+    text-decoration: none;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    
+    position: relative;
+}
+.subproducts-list a:hover{
+    color: var(--secundary-color);
+}
+.subproducts-list li::after{
+    content: " ";
+    position: absolute;
+    background-color: var(--secundary-color);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    top: 17px;
+    bottom: 0;
+    left: 15px;
+    right: 0;
+}
 .logo{
     height: 90px;
 }
 
-.container-img{
+/* .container-img{
     height: 310px;
-}
-.background-img{
+} */
+.container-img{
     background-image: url('../img/fondo3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 310px;
     width: 100%;
 
-    position: relative; /*ESTO SE RELACIONA CON EL COLOR DE FONDO*/
+    position: relative;
 }
-.background-img::after{ /*COLOR DE FONDO DEL BACKGROUND*/
+.container-img::after{ 
     content: '';
     position: absolute;
     background-color: var(--primary-color);
@@ -50,6 +119,7 @@
 }
 .extension{
     height: 60px;
-    position: relative; /*ESTA PARTE ES PARA RESLATRA LAS PALABRAS Y QUE NO QUEDEN POR DEBAJO DEL COLOR DE FONDO*/
+    width: 100%;
+    position: relative;
     z-index: 1;
 }

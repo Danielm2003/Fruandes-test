@@ -45,5 +45,6 @@
 }
 
 .header{
-    background-color: aqua;
+    display: flex;
+    width: auto;
 }

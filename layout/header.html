@@ -4,34 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9c92b85ed8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/variables.css">
     <link rel="stylesheet" href="../css/style-header.css">
-    <!-- <script>
-        function cambiarPagina(){
-            location.assign('../index.html')
-        }
-    </script> -->
     <title>Fruandes</title>
 </head>
 <body>
     
-    <header class="container-head">
+    <section class="container-head">
         <div class="container-navbar">
-            <img loading="lazy" src="../img/logo-fruandes.png" alt="" class="logo" onclick="cambiarPagina()">
-            <!-- <a href="../index.html">
-            </a> -->
+            <a href="../index.html" target="_parent">
+                <img loading="lazy" src="/img/logo-fruandes.png" alt="" class="logo">
+            </a>
             <nav class="nav-bar">
-                <a class="raleway700" href="#">PRODUCTS</a>
-                <a class="raleway700" href="/shop.html">SHOP</a>
-                <a class="raleway700" href="#">ABOUT US</a>
-                <a class="raleway700" href="/blog.html">BLOG</a>
+                <ul class="list-navbar">
+                    <li class="container-products-menu">
+                        <a class="raleway700" href="#">PRODUCTS</a>
+                        <i class="fa-solid fa-caret-down" id="button-menu-products" onclick="abrirMenu2()"></i>
+                    </li>
+                    <li><a class="raleway700" href="shop.html">SHOP</a></li>
+                    <li><a class="raleway700" href="#">ABOUT US</a></li>
+                    <li><a class="raleway700" href="#">BLOG</a></li>
+                </ul>
             </nav>
         </div>
-
-        <div class="container-img background-img">
+        
+        <div class="container-img">
             <img loading="lazy" src="../img/header-extension.png" alt="" class="extension">
         </div>
-    </header>
+        <div class="products-list-head" id="menu-products">
+            <ul class="subproducts-list">
+                <a href="#">
+                    <li class="raleway500">Banana</li>
+                </a>
+                <a href="#">
+                    <li class="raleway500">Cane Sugar</li>
+                </a>
+                <a href="#">
+                    <li class="raleway500">Cocoa</li>
+                </a>
+                <a href="#">
+                    <li class="raleway500">Dragon Fruit</li>
+                </a>
+                <a href="../goldenberry.html" target="_parent">
+                    <li class=" raleway500">Goldenberry</li>
+                </a>
+                <a href="#">
+                    <li class="raleway500">Mango</li>
+                </a>
+                <a href="#">
+                    <li class="raleway500">Pineapple</li>
+                </a>
+            </ul> 
+        </div>
+    </section>
 
+    <script src="../app.js"></script>
 </body>
 </html>
