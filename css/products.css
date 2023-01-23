@@ -1,12 +1,114 @@
-.header-goldenberry{
-    background-color: aqua;
+
+/*-----------HEADER-----------*/
+.container-header-fruit{
+    background-color: #fff;
+    height: 545px;
+}
+.extension{
+    background-color: transparent;
+    display: flex;
+    height: 60px;
+    width: 100%;
+
+    position: relative;
+    z-index: 2;
+    top: -431px;
+}
+
+.container-navbar{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+
+    /* position: relative;
+    z-index: 2; */
+}
+.nav-bar a{
+    font-size: 24px;
+    color: var(--primary-color);
+    margin-left: 40px;
+    text-decoration: none;
+    outline: none;
+}
+.fa-caret-down{
+    padding-left: 5px;
+    color: var(--primary-color);
+    font-size: 24px;
+    cursor: pointer;
+}
+.fa-caret-down:hover{
+    color: var(--secundary-color);
+}
+
+.list-navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.products-list-head{
+    visibility: hidden;
+    position: absolute;
+    top: 75px;
+    bottom: 0;
+    right: 0;
+    left: 855px;
+    z-index: 3;
+    width: 280px;
+}
+.products-list-head.active{
+    visibility: visible;
+}
+.subproducts-list{
+    display: flex;
+    flex-direction: column;;
+    background-color: rgb(255, 255, 255, 1);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 280px;
+    justify-content: center;
+    margin: 5px 0;
+}
+.subproducts-list a{
+    text-decoration: none;
+    font-size: 20px;
+    list-style: none;
+    padding: 10px 0px 10px 40px;
+    text-decoration: none;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    
+    position: relative;
+}
+.subproducts-list a:hover{
+    color: var(--secundary-color);
+}
+.subproducts-list li::after{
+    content: " ";
+    position: absolute;
+    background-color: var(--secundary-color);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    top: 17px;
+    bottom: 0;
+    left: 15px;
+    right: 0;
+}
+.logo{
+    height: 90px;
 }
 
 /*---SECCION1---*/
 .fruit{
     display: flex;
     flex-direction: row;
-    height: 360px;
+    height: auto;
     align-items: center;
     background-color: #f7f4ee;
 }
@@ -14,8 +116,30 @@
     display: flex;
     width: 50%;
 }
-.img-desc{
-    height: 360px;
+/*------------------PRODUCTS------------------------*/
+.img-desc-goldenberry{
+    height: 330px;
+    width: 100%;
+    background-size: cover;
+}
+.img-desc-banana{
+    height: 426px;
+    width: 100%;
+}
+.img-desc-canesugar, .img-desc-dragonfruit{
+    height: 474px;
+    width: 100%;
+}
+.img-desc-cocoa{
+    height: 354px;
+    width: 100%;
+}
+.img-desc-mango{
+    height: 378px;
+    width: 100%;
+}
+.img-desc-pineapple{
+    height: 522px;
     width: 100%;
 }
 
@@ -23,7 +147,6 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    /* width: 50%; */
     width: 660px;
     background-color: #f7f4ee;
     padding: 30px 30px;
@@ -77,10 +200,19 @@
     display: flex;
     height: 250px;
 }
+.leader-cocoa{
+    display: flex;
+    justify-content: center;
+}
 .container-leader-img{
     width: 50%;
     display: flex;
     justify-content: right;
+    align-items: center;
+}
+.container-leader-img-cocoa{
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 .leader-img{
@@ -88,6 +220,11 @@
     height: 75%;
     display: flex;
     padding-right: 15px;
+}
+.leader-img-cocoa{
+    height: 100%;
+    display: flex;
+    padding-bottom: 20px;
 }
 .leader-name{
     width: 50%;
@@ -118,7 +255,7 @@
 
     position: relative;
 }
-li::after{
+/* li::after{
     content: " ";
     position: absolute;
     background-color: var(--orange-color);
@@ -129,7 +266,7 @@ li::after{
     bottom: 0;
     left: 0;
     right: 0;
-}
+} */
 
 /*---VIDEO---*/
 .video-fruit{
@@ -149,4 +286,40 @@ li::after{
     font-size: 20px;
     margin: 0 auto;
     margin-bottom: 60px;
+}
+
+
+.container-imgandtext{
+    width: 100%;
+    display: flex;
+}
+
+.img-title-fruit{
+    width: 50%;
+}
+.img-title-fruit img{
+    height: 100%;
+    padding-right: 40px;
+    float: right;
+}
+
+.text-title-fruit{
+    width: 50%;
+    padding-left: 40px;
+    position: relative;
+    top: 170px;
+    height: 100px;
+    color: #fff;
+}
+.text-title-fruit p{
+    position: relative;
+    top: 20px;
+    font-size: 24px;
+}
+.text-title-fruit h1{
+    font-size: 60px;
+}
+.header-fruit{
+    position: relative;
+    z-index: 45;
 }

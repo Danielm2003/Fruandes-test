@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
 *, body{
     margin: 0;
     padding: 0;
@@ -16,6 +19,13 @@
     --gray-color: #d7d7d7;
     --second-gray-color: #a7a7a7;
     --orange-color: #e08f26;
+    --goldenberry-color: #e08f26;
+    --banana-color: #f4d127;
+    --canesugar-color: #caa230;
+    --cocoa-color: #a0d9d7;
+    --dragonfruit-color: #f05552;
+    --mango-color: #aad03c;
+    --pineapple-color: #faab20;
 }
 
 .raleway300{ /*TIPO DE LETRA*/
@@ -47,6 +57,27 @@
     font-weight: 900;
 }
 
+.baloo400{
+    font-family: 'Baloo 2', cursive;
+    font-weight: 400;
+}
+.baloo500{
+    font-family: 'Baloo 2', cursive;
+    font-weight: 500;
+}
+.baloo600{
+    font-family: 'Baloo 2', cursive;
+    font-weight: 600;
+}
+.baloo700{
+    font-family: 'Baloo 2', cursive;
+    font-weight: 700;
+}
+.baloo800{
+    font-family: 'Baloo 2', cursive;
+    font-weight: 800;
+}
+
 .right{
     float: right;
     
@@ -55,6 +86,12 @@
     float: left;
 }
 
+.logo{
+    outline: none;
+}
+a{
+    outline: none;
+}
 
 /* ---------------------FOOTER-------------- */
 .footer{
@@ -70,11 +107,22 @@
 
 /* --------------------HEADER------------------------ */
 .header{
-    position: relative;
     height: 424px !important;
 }
 .header-import{
-    position: absolute;
     width: 100% !important;
     height: 100%;
+}
+
+.header-fruit{
+    height: 245px !important;
+}
+.header-import-fruit{
+    width: 100%;
+    /* height: 100%; */
+    height: 100%;
+}
+.extesion{
+    width: 100%;
+    height: 60px;
 }

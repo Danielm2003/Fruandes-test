@@ -31,9 +31,6 @@
 .fa-caret-down:hover{
     color: var(--secundary-color);
 }
-.fa-caret-down.active{
-    color: red;
-}
 
 .list-navbar{
     display: flex;
@@ -45,7 +42,7 @@
 .products-list-head{
     visibility: hidden;
     position: absolute;
-    top: 70px;
+    top: 75px;
     bottom: 0;
     right: 0;
     left: 855px;

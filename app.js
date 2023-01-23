@@ -22,9 +22,10 @@ let btnAbrirPopup1 = document.getElementById("imgcert1"),
     btnCerrarPopup4 = document.getElementById("btn-cerrar-popup4"),
     btnCerrarPopup5 = document.getElementById("btn-cerrar-popup5"),
     btnCerrarPopup6 = document.getElementById("btn-cerrar-popup6"),
-
-    btndMenuHome = document.getElementById("button-menu"), /*PRINCIPAL PAGE*/
-    menuHome = document.getElementById("menu"), /*PRINCIPAL PAGE*/
+    
+    /*PRINCIPAL PAGE*/
+    btndMenuHome = document.getElementById("button-menu"), 
+    menuHome = document.getElementById("menu"), 
 
      /*HEADER PAGES*/
     btnMenuHead = document.getElementById("button-menu-products"),
@@ -59,9 +60,7 @@ function abrirMenu2(){
         btnMenuHead.style.transform = "rotate(0deg)"
         btnMenuHead.style.padding = "0px 0px 0px 5px"
     }
-
 }
-
 
 // --------------ABRIR POPUP----------
 btnAbrirPopup1.addEventListener('click', function(){
