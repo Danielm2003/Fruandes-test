@@ -1,15 +1,8 @@
-.extension-img{
+.extension{
     background-color: var(--gray-color);
-    display: flex;
-    height: 60px;
-    width: 100%;
 }
-.extension-img-rotated{
+.extension-rotated{
     background-color: var(--gray-color);
-    display: flex;
-    height: 60px;
-    width: 100%;
-    transform:rotate(180deg)
 }
 
 /* --------MAIN PRINCIPAL-------- ESTO ES LO QUE MAS SE REPITE*/
@@ -117,6 +110,10 @@
 .products-list.active{
     visibility: visible;
 }
+/* #menu{
+    width: 250px;
+    background-color: rebeccapurple;
+} */
 .subproducts-list{
     display: flex;
     flex-direction: column;;
@@ -259,6 +256,10 @@
     padding: 30px 0 22px 0;
     display: flex;
     justify-content: center;
+}
+.boton-we-are a{
+    height: 100%;
+    font-size: 24px;
 }
 
 
