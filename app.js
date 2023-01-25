@@ -122,3 +122,13 @@ btnCerrarPopup6.addEventListener('click', function(e){
     overlay6.classList.remove('active');
     popup6.classList.remove('active');
 });
+
+
+const slider = document.querySelector("#slider-team");
+let sliderSection = document.querySelectorAll(".card");
+let sliderSectionLast = sliderSection[sliderSection.length-1];
+
+const btnLeft = document.querySelector("#slider-left");
+const btnRight = document.querySelector("#slider-right");
+
+slider.insertAdjacentElement("afterbegin", sliderSectionLast)
