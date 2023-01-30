@@ -78,14 +78,6 @@
     font-weight: 800;
 }
 
-.right{
-    float: right;
-    
-}
-.left{
-    float: left;
-}
-
 .logo{
     outline: none;
 }
@@ -130,6 +122,29 @@ a{
 }
 .header-import-fruit{
     width: 100%;
-    /* height: 100%; */
     height: 100%;
+}
+
+/*-----------------CLASES MAS USADAS----------------*/
+.container-btn{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+.btn-fruandes{
+    background-color: var(--primary-color);
+    border: none;
+    height: 60px;
+    width: 250px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-title{
+    height: 130px;
 }

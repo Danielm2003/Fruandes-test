@@ -17,6 +17,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 .container-logo-shop img{
     height: 130px;
@@ -26,11 +27,13 @@
     height: 305px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 .text-shop{
     display: grid;
     justify-self: center;
     align-self: center; 
+    width: 100%;
 }
 .text-shop h1{
     font-size: 50px;
@@ -42,6 +45,9 @@
     font-size: 24px;
     text-align: center;
     margin: 0;
+}
+.container-btn{
+    margin: 30px 0;
 }
 
 .header{

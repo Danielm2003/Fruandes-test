@@ -37,13 +37,13 @@ function abrirMenu(){
         menuHome.classList.add('active');
 
         btndMenuHome.style.transform = "rotate(180deg)"
-        btndMenuHome.style.padding = "0px 5px 3px 0px"
+        btndMenuHome.style.padding = "0px 8px 5px 0px"
 
     }else{
         menuHome.classList.remove('active');
 
         btndMenuHome.style.transform = "rotate(0deg)"
-        btndMenuHome.style.padding = "0px 0px 0px 5px"
+        btndMenuHome.style.padding = "0px 0px 0px 8px"
     }
 }
 
@@ -52,13 +52,13 @@ function abrirMenu2(){
         menuProducts.classList.add('active');
 
         btnMenuHead.style.transform = "rotate(180deg)"
-        btnMenuHead.style.padding = "0px 5px 3px 0px"
+        btnMenuHead.style.padding = "0px 8px 3px 0px"
             
     }else{
         menuProducts.classList.remove('active');
 
         btnMenuHead.style.transform = "rotate(0deg)"
-        btnMenuHead.style.padding = "0px 0px 0px 5px"
+        btnMenuHead.style.padding = "0px 0px 0px 8px"
     }
 }
 

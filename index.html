@@ -4,20 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> -->
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
     <link rel="shortcut icon" href="./img/logo-fruandes.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/9c92b85ed8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/variables.css">
     <title>Fruandes</title>
 </head>
-
 <body class="container">
-    
-
-    <section class="container-head">     
+    <section class="container-head">
         <div class="container-navbar">
             <a href="/index.html" target="_parent">
                 <img loading="lazy" src="/img/logo-blanco.png" alt="" class="logo-header">
@@ -25,7 +19,7 @@
             <nav class="nav-bar">
                 <ul class="list-navbar">
                     <li class="container-products-menu">
-                        <a class="raleway700" href="#">PRODUCTS</a>
+                        <p class="raleway700" onclick="abrirMenu()">PRODUCTS</p>
                         <i class="fa-solid fa-caret-down" id="button-menu" onclick="abrirMenu()"></i>
                     </li>
                     <li>
@@ -72,33 +66,29 @@
             <div class="subtext-header">
                 <h2 class="raleway700">We develop profitable, high quality and environmentally sustainable business alternatives</h2>
             </div>
-            <div class="container-btn-head">
-                <button type="button" class="btn-head raleway700">LEARN MORE</button>
-            </div>
+            <a class="container-btn" href="#" target="_parent">
+                <button type="button" class="btn-fruandes raleway700">LEARN MORE</button>
+            </a>
         </div>
     </section>
     
     <section class="container-weare">
         <div class="subcontainer-weare">
-            <div class="left container-dibujo">
-                <img class="dibujo-weare" src="./img/dibujo1.png" alt="">
+            <div class="container-img-weare">
+                <img class="img-weare" src="./img/dibujo1.png" alt="">
             </div>
-            <div class="information-weare">
-                <div class="title right">
-                    <div class="text-title">
-                        <h2 class="raleway900">WE ARE</h2>
+            <div class="container-information-weare">
+                <div class="information-weare">
+                    <div class="title-weare">
+                        <h1 class="raleway900">WE ARE</h1>
+                        <img loading="lazy" src="./img/logo-fruandes2.png" class="img-title">
+                    </div>  
+                    <div class="text-weare">
+                        <p class=" raleway500">We are a Colombian agro-industrial company that has a clear purpose: to highlight the small farmer in the value chain, while creating a delicious product native from our Colombian countryside.</p>
                     </div>
-                    <img loading="lazy" src="./img/logo-fruandes2.png" alt="" class="logo-main">
-                </div>
-                <div class="container-text right raleway500">
-                    <p>We are a Colombian agro-industrial company that has a clear purpose: to highlight the small farmer in the value chain, while creating a delicious product native from our Colombian countryside.</p>
-                    <div class="boton-we-are">
-                        <div class="button">
-                            <a href="about-us.html" class="content-button raleway700" target="_parent">
-                                <button type="button" class="">READ MORE</button>
-                            </a>  
-                        </div>
-                    </div>
+                    <a class="container-btn" href="./about-us.html" target="_parent">
+                        <button type="button" class="btn-fruandes raleway700">READ MORE</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -106,68 +96,73 @@
 
     <img loading="lazy" src="./img/header-extension2.png" alt="extension" class="extension">
 
-    <section class="container-recommendations">
-        <div class="recommendations">
-            <div class="title2 title-recommendations">
-                <img loading="lazy" src="./img/logo-fruandes2.png" alt="" class="logo-home logo-recomends">
-                <h2 class="raleway900">RECOMMENDATIONS</h2>
+    <section class="container-recommendations"> 
+        <div class="subcontainer-recommendations">
+            <div class="title-recommendations">
+                <img loading="lazy" src="./img/logo-fruandes2.png" class="img-title">
+                <h1 class="raleway900">RECOMMENDATIONS</h1>
+            </div> 
+            <div class="container-products-recommends">
+                <div class="product-recommend">
+                    <a href="shop.html" class="">
+                        <img loading="lazy" src="./img/products/sub1.jpg" class="img-product-recomend">
+                        <img loading="lazy" src="./img/products/product1.jpg"class="img-product-recomend top">
+                    </a>
+                </div>
+                <div class="product-recommend">
+                    <a href="shop.html" class="">
+                        <img loading="lazy" src="./img/products/sub2.jpg" class="img-product-recomend">
+                        <img loading="lazy" src="./img/products/product2.jpg"class="img-product-recomend top">
+                    </a>
+                </div>
+                <div class="product-recommend">
+                    <a href="shop.html" class="">
+                        <img loading="lazy" src="./img/products/sub3.jpg" class="img-product-recomend">
+                        <img loading="lazy" src="./img/products/product3.jpg"class="img-product-recomend top">
+                    </a>
+                </div>
+                <div class="product-recommend">
+                    <a href="shop.html" class="">
+                        <img loading="lazy" src="./img/products/sub4.jpg" class="img-product-recomend">
+                        <img loading="lazy" src="./img/products/product4.jpg"class="img-product-recomend top">
+                    </a>
+                </div>
             </div>
-            <div class="products-recomends">
-                <div class="products-home">
-                    <img loading="lazy" src="./img/products/sub1.jpg" class="product-recomend">
-                    <img loading="lazy" src="./img/products/product1.jpg"class="product-recomend top">
-                </div>
-                <div class="products-home">
-                    <img loading="lazy" src="./img/products/sub2.jpg" class="product-recomend">
-                    <img loading="lazy" src="./img/products/product2.jpg" class="product-recomend top">
-                </div>
-                <div class="products-home">
-                    <img loading="lazy" src="./img/products/sub3.jpg" class="product-recomend">
-                    <img loading="lazy" src="./img/products/product3.jpg" class="product-recomend top">
-                </div>
-                <div class="products-home">
-                    <img loading="lazy" src="./img/products/sub4.jpg" class="product-recomend">
-                    <img loading="lazy" src="./img/products/product4.jpg" class="product-recomend top">
-                </div>
-            </div>
-            <div class="button-recommends">
-                <div class="button">
-                    <button type="button" class="content-button raleway700">
-                        <a class="btn-shop" href="shop.html" target="_parent">GO TO SHOP</a>
-                    </button>
-                </div>
-            </div>
+            <a class="container-btn" href="shop.html" target="_parent">
+                <button type="button" class="btn-fruandes raleway700">GO TO SHOP</button>
+            </a>
         </div>
     </section>
 
     <img loading="lazy" src="./img/header-extension2.png" alt="extension" class="extension-rotated">
 
     <section class="container-news">
-        <div class="subcontainer-blog">
-            <div class="left">
-                <div class="title2 title-blog">
-                    <img loading="lazy" src="./img/logo-fruandes2.png" alt="" class="logo-home">
-                    <h2 class="raleway900">NEWS</h2>
+        <div class="subcontainer-news">
+            <div class="container-information-news">
+                <div class="title-news">
+                    <img loading="lazy" src="./img/logo-fruandes2.png" class="img-title">
+                    <h1 class="raleway900">NEWS</h1>
+                </div> 
+                <div class="text-news">
+                    <p class="raleway500">Learn more about the latest news about our farmers and the Fruandes community ir our blog.</p>
                 </div>
-                <div class="container-text2 raleway500">
-                    <p>Learn more about the latest news about our farmers and the Fruandes community ir our blog.</p>
-                    <div class="boton-blog">
-                        <div class="button">
-                            <button class="content-button raleway700">GO TO BLOG</button>
-                        </div>
-                    </div>
-                </div>
+                <a class="container-btn" href="blog.html" target="_parent">
+                    <button type="button" class="btn-fruandes raleway700">GO TO BLOG</button>
+                </a>
             </div>
-            <div class="news-blog right">
-                <div class="card">
-                    <div class="img-card-container">
-                        <img loading="lazy" src="/img/img1.jpg" alt="" class="img-card">
+            <div class="container-card-news">
+                <div class="card-news">
+                    <div class="container-imgcard-news">
+                        <img loading="lazy" src="/img/img1.jpg" alt="" class="imgcard-news">
                     </div>
-                    <div class="card-text">
-                        <h4 class="raleway900">Organic Agriculture: How Jesus' Pigs Create Gas and Fertilizer</h4>
-                        <p class="raleway400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore in sit voluptatem suscipit animi magni, aliquid sed temporibus alias blanditiis id, quaerat fuga maiores debitis! Numquam nihil aut ipsam officiis.
-                        </p>
-                        <p class="raleway900 date">12 - March - 2022</p>
+                    <div class="container-textcard-news">
+                        <div class="title-card-news">
+                            <h4 class="raleway900">Organic Agriculture: How Jesus' Pigs Create Gas and Fertilizer</h4>
+                        </div>
+                        <div class="text-card-news">
+                            <p class="raleway400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore in sit voluptatem suscipit animi magni, aliquid sed temporibus alias blanditiis id, quaerat fuga maiores debitis! Numquam nihil aut ipsam officiis.</p>
+                            <p class="raleway900 date">12 - March - 2022</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -176,8 +171,8 @@
 
     <section class="container-certifications">
         <div class="subcontainer-certifications">
-            <div class="title3">
-                <h2 class="lines-effect raleway900">OUR CERTIFICATIONS</h2>            
+            <div class="title-certifications">
+                <h2 class="lines-effect raleway900">OUR CERTIFICATIONS</h2>
             </div>
             <div class="container-img-certifications">
                 <div class="img-content">
@@ -200,18 +195,17 @@
                         <img loading="lazy" class="img-certi6" src="./img/certificado6.png" alt="">
                     </button>
                 </div>
-            </div>
-                 
+            </div>  
         </div>
     </section>
 
     <div class="overlay1" id="overlay1">
         <div class="popup1" id="popup1">
-            <div class="cont-img left">
+            <div class="cont-img">
                 <img  loading="lazy" src="/img/certificado1.png" alt="img" class="img-certificado-height">
             </div>
-            <div class="cont-text right">
-                <a href="" id="btn-cerrar-popup1" class="btn-cerrar-popup right"><i class="fas fa-times"></i></a>
+            <div class="cont-text">
+                <a href="" id="btn-cerrar-popup1" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
                 <h1 class="raleway900 title-certi">NAMELESS</h1>
                 <p class="text-certi raleway500">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum tenetur, temporibus itaque vitae reprehenderit nisi odit sapiente accusantium, quaerat est nesciunt? Minus deleniti obcaecati eos labore recusandae eaque iste sequi.<br><br>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eius aliquid voluptas fugit fugiat eveniet culpa incidunt, magni nesciunt amet nulla, soluta quisquam quae dolore molestiae iusto optio vero vitae?
@@ -224,11 +218,11 @@
     </div>
     <div class="overlay2" id="overlay2">
         <div class="popup2" id="popup2">
-            <div class="cont-img left">
+            <div class="cont-img">
                 <img loading="lazy" src="/img/certificado2.png" alt="img" class="img-certificado-height">
             </div>
-            <div class="cont-text right">   
-                <a href="" id="btn-cerrar-popup2" class="btn-cerrar-popup right"><i class="fas fa-times"></i></a>
+            <div class="cont-text">   
+                <a href="" id="btn-cerrar-popup2" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
                 <h1 class="raleway900 title-certi">B CORPORATION</h1>
                 <p class="text-certi raleway500">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum tenetur, temporibus itaque vitae reprehenderit nisi odit sapiente accusantium, quaerat est nesciunt? Minus deleniti obcaecati eos labore recusandae eaque iste sequi.<br><br>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eius aliquid voluptas fugit fugiat eveniet culpa incidunt, magni nesciunt amet nulla, soluta quisquam quae dolore molestiae iusto optio vero vitae?
@@ -241,11 +235,11 @@
     </div>
     <div class="overlay3" id="overlay3">
         <div class="popup3" id="popup3">
-            <div class="cont-img left">
+            <div class="cont-img">
                 <img loading="lazy" src="/img/certificado3.png" alt="img" class="img-certificado-width">
             </div>
-            <div class="cont-text right">   
-                <a href="" id="btn-cerrar-popup3" class="btn-cerrar-popup right"><i class="fas fa-times"></i></a>
+            <div class="cont-text">   
+                <a href="" id="btn-cerrar-popup3" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
                 <h1 class="raleway900 title-certi">USDA ORGANIC</h1>
                 <p class="text-certi raleway500">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum tenetur, temporibus itaque vitae reprehenderit nisi odit sapiente accusantium, quaerat est nesciunt? Minus deleniti obcaecati eos labore recusandae eaque iste sequi.<br><br>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eius aliquid voluptas fugit fugiat eveniet culpa incidunt, magni nesciunt amet nulla, soluta quisquam quae dolore molestiae iusto optio vero vitae?
@@ -258,11 +252,11 @@
     </div>
     <div class="overlay4" id="overlay4">
         <div class="popup4" id="popup4">
-            <div class="cont-img left">
+            <div class="cont-img">
                 <img loading="lazy" src="/img/certificado4.png" alt="img" class="img-certificado-width">
             </div>
-            <div class="cont-text right">   
-                <a href="" id="btn-cerrar-popup4" class="btn-cerrar-popup right"><i class="fas fa-times"></i></a>
+            <div class="cont-text">   
+                <a href="" id="btn-cerrar-popup4" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
                 <h1 class="raleway900 title-certi">KOSHER CHECK</h1>
                 <p class="text-certi raleway500">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum tenetur, temporibus itaque vitae reprehenderit nisi odit sapiente accusantium, quaerat est nesciunt? Minus deleniti obcaecati eos labore recusandae eaque iste sequi.<br><br>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eius aliquid voluptas fugit fugiat eveniet culpa incidunt, magni nesciunt amet nulla, soluta quisquam quae dolore molestiae iusto optio vero vitae?
@@ -275,11 +269,11 @@
     </div>
     <div class="overlay5" id="overlay5">
         <div class="popup5" id="popup5">
-            <div class="cont-img left">
+            <div class="cont-img">
                 <img loading="lazy" src="/img/certificado5.png" alt="img" class="img-certificado-width">
             </div>
-            <div class="cont-text right">   
-                <a href="" id="btn-cerrar-popup5" class="btn-cerrar-popup right"><i class="fas fa-times"></i></a>
+            <div class="cont-text">   
+                <a href="" id="btn-cerrar-popup5" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
                 <h1 class="raleway900 title-certi">NAMELESS</h1>
                 <p class="text-certi raleway500">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum tenetur, temporibus itaque vitae reprehenderit nisi odit sapiente accusantium, quaerat est nesciunt? Minus deleniti obcaecati eos labore recusandae eaque iste sequi.<br><br>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eius aliquid voluptas fugit fugiat eveniet culpa incidunt, magni nesciunt amet nulla, soluta quisquam quae dolore molestiae iusto optio vero vitae?
@@ -292,11 +286,11 @@
     </div>
     <div class="overlay6" id="overlay6">
         <div class="popup6" id="popup6">
-            <div class="cont-img left">
+            <div class="cont-img">
                 <img loading="lazy" src="/img/certificado6.png" alt="img" class="img-certificado-width">
             </div>
-            <div class="cont-text right">   
-                <a href="" id="btn-cerrar-popup6" class="btn-cerrar-popup right"><i class="fas fa-times"></i></a>
+            <div class="cont-text">   
+                <a href="" id="btn-cerrar-popup6" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
                 <h1 class="raleway900 title-certi">NAMELESS</h1>
                 <p class="text-certi raleway500">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum tenetur, temporibus itaque vitae reprehenderit nisi odit sapiente accusantium, quaerat est nesciunt? Minus deleniti obcaecati eos labore recusandae eaque iste sequi.<br><br>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eius aliquid voluptas fugit fugiat eveniet culpa incidunt, magni nesciunt amet nulla, soluta quisquam quae dolore molestiae iusto optio vero vitae?
@@ -313,6 +307,5 @@
     </footer>
 
     <script src="app.js"></script>
-    
 </body>
 </html>

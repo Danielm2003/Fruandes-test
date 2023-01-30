@@ -2,7 +2,7 @@
 /*-----------HEADER-----------*/
 .container-header-fruit{
     background-color: #fff;
-    height: 545px;
+    height: 541px;
 }
 .extension{
     background-color: transparent;
@@ -14,36 +14,52 @@
     z-index: 2;
     top: -431px;
 }
-
 .container-navbar{
     width: 1200px;
     margin: 0 auto;
-    padding: 10px 0;
     display: flex;
     justify-content: space-between;
+    padding: 10px 0;
+    height: 110px;
+    position: relative;
+    z-index: 2;
+}
+.logo{
+    height: 90px;
+}
+.nav-bar{
+    display: flex;
     align-items: center;
-    color: #fff;
-
-    /* position: relative;
-    z-index: 2; */
+    height: 90px;
 }
-.nav-bar a{
-    font-size: 24px;
+.nav-bar ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.list-navbar p, .list-navbar a{
     color: var(--primary-color);
-    margin-left: 40px;
     text-decoration: none;
-    outline: none;
-}
-.fa-caret-down{
-    padding-left: 5px;
-    color: var(--primary-color);
     font-size: 24px;
+    outline: none;
+    margin-left: 40px;
+}
+.list-navbar p{
     cursor: pointer;
 }
-.fa-caret-down:hover{
+.container-products-menu{
+    display: flex;
+    align-items: center;
+}
+.container-products-menu i{
+    color: var(--primary-color);
+    font-size: 24px;
+    padding-left: 8px;
+    cursor: pointer;
+}
+.container-products-menu i:hover{
     color: var(--secundary-color);
 }
-
 .list-navbar{
     display: flex;
     flex-direction: row;
@@ -116,6 +132,7 @@
     display: flex;
     width: 50%;
 }
+
 /*------------------PRODUCTS------------------------*/
 .img-desc-goldenberry{
     height: 330px;
@@ -142,7 +159,6 @@
     height: 522px;
     width: 100%;
 }
-
 .fruit-description{
     margin: 0 auto;
     display: flex;
@@ -168,7 +184,6 @@
 .fruit-description-text p{
     font-size: 20px;
 }
-
 .extension-product{
     display:block;
     margin:auto;
@@ -194,7 +209,6 @@
     justify-content: center;
     font-size: 80px;
     color: var(--orange-color);
-    padding-bottom: 20px;
 }
 .leader{
     display: flex;
@@ -203,6 +217,7 @@
 .leader-cocoa{
     display: flex;
     justify-content: center;
+    margin: 10px 0 20px 0;
 }
 .container-leader-img{
     width: 50%;
@@ -224,7 +239,6 @@
 .leader-img-cocoa{
     height: 100%;
     display: flex;
-    padding-bottom: 20px;
 }
 .leader-name{
     width: 50%;
@@ -287,8 +301,6 @@
     margin: 0 auto;
     margin-bottom: 60px;
 }
-
-
 .container-imgandtext{
     width: 100%;
     display: flex;
@@ -302,7 +314,6 @@
     padding-right: 40px;
     float: right;
 }
-
 .text-title-fruit{
     width: 50%;
     padding-left: 40px;
