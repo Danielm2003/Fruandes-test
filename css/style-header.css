@@ -35,6 +35,7 @@
 }
 .list-navbar p{
     cursor: pointer;
+    user-select: none;
 }
 .container-products-menu{
     display: flex;
