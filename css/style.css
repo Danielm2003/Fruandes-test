@@ -77,7 +77,7 @@
     top: -40px;
     bottom: 0;
     right: 0;
-    left: 855px;
+    left: 665px;
     z-index: 3;
     width: 280px;
 }
@@ -295,7 +295,6 @@
     font-size: 24px;
 }
 .container-card-news{
-    /* background-color: pink; */
     width: 350px;
     display: flex;
     justify-content: center;
@@ -370,8 +369,7 @@
     top: 50%;
 }
 .title-certifications h2::before{
-    left: -280px;
-    
+    left: -280px;  
 }
 .title-certifications h2::after{
     right: -280px;

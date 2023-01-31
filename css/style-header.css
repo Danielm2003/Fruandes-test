@@ -60,10 +60,10 @@
 .products-list-head{
     visibility: hidden;
     position: absolute;
-    top: 75px;
+    top: 70px;
     bottom: 0;
     right: 0;
-    left: 855px;
+    left: 665px;
     z-index: 3;
     width: 280px;
 }
