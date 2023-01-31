@@ -122,3 +122,11 @@ btnCerrarPopup6.addEventListener('click', function(e){
     overlay6.classList.remove('active');
     popup6.classList.remove('active');
 });
+
+
+ let nameMessage = document.getElementById("name-message");
+ let emailMessage = document.getElementById("email-message");
+ let messageMessage = document.getElementById("message-message");
+
+ let message = "Luis"
+ console.log(`hola ${message}`)
