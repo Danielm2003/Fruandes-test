@@ -172,11 +172,12 @@
 }
 .btn-left{
     left: 150px;
+    color: var(--primary-color);
 }
 .btn-right{
     right: 150px;
+    color: var(--primary-color);
 }
-
 .impact-reports{
     display: flex;
     align-items: center;

@@ -22,6 +22,7 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 10px 0;
     height: 110px;
     position: relative;
@@ -29,6 +30,11 @@
 }
 .logo-header{
     height: 90px;
+}
+.menu-expand-head{
+    display: none;
+    color: #fff;
+    font-size: 34px;
 }
 .nav-bar{
     display: flex;
@@ -154,7 +160,7 @@
 
 /*--------------WE ARE-----------------*/
 .container-weare{
-    padding: 30px 0;
+    margin: 30px 0;
     display: flex;
     justify-content: center;
 }
@@ -173,10 +179,14 @@
     width: 80%;
 }
 .container-information-weare{
-    width: 930px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 .information-weare{
-    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .title-weare{
     display: flex;
@@ -188,9 +198,6 @@
     color: var(--secundary-color);
     margin-right: 12px;
 }
-.title-weare img{
-    height: 130px;
-}
 .text-weare{
     font-size: 24px;
     padding: 30px 0;
@@ -199,20 +206,25 @@
 
 
 /*---------------RECOMENDATIONS-----------------*/
-.extension{
+.extension, .extension-rotated{
     background-color: var(--gray-color);
+    width: 100%;
 }
-.extension-rotated{
-    background-color: var(--gray-color);
+.extension-responsive, .extension-rotated-responsive{
+    display: none !important;
 }
 .container-recommendations{
     background-color: var(--gray-color);
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 .subcontainer-recommendations{
-    width: 1200px;
+    width: 100%;
     margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .title-recommendations{
     display: flex;
@@ -229,8 +241,10 @@
 }
 .container-products-recommends{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 30px;
     align-items: center;
+    width: 1200px;
 }
 .product-recommend{
     width: 275px;
@@ -274,6 +288,9 @@
 }
 .container-information-news{
     width: 730px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .title-news{
     display: flex;
@@ -303,7 +320,6 @@
     border-radius: 5px;
 }
 .container-imgcard-news{
-    background-color: aqua;
     display: flex;
     width: 100%;
     height: 250px;
@@ -343,13 +359,14 @@
     width: 100%;
 }
 .subcontainer-certifications{
-    width: 1200px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .title-certifications{
-    width: 1200px;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -358,6 +375,7 @@
     position: relative;
     color: var(--primary-color);
     font-size: 60px;
+    margin-bottom: 30px;
 } 
 .title-certifications h2::after, .title-certifications h2::before{ /* ESTO ES PARA AÑADIR LAS LINEAS LATERALES AL TITULO */
     content: '';
@@ -374,14 +392,23 @@
 .title-certifications h2::after{
     right: -280px;
 }
+.container-img-certifications{
+    display: flex;
+    justify-content: center;
+}
+.container-img-certifications{
+    display: flex;
+    justify-content: center;
+}
 .img-content{
-    margin-top: 30px;
     display: flex;
     text-align: center;
     align-items: center;
-    justify-content: space-between;
-    width: 760px;
-    height: 125px;
+    justify-content: center ;
+    width: 1000px;
+    height: fit-content;
+    gap: 35px;
+    flex-wrap: wrap;
 }
 .btn-certifications{
     border: none;
@@ -390,49 +417,47 @@
     padding: 0;
     cursor: pointer;
     outline: none;
+    transform: scale(1);
+    transition: .5s ease transform;
 }
-.container-img-certifications{
-    display: flex;
-    justify-content: center;
+.btn-slider{
+    display: none !important;
+}
+.btn-left{
+    color: var(--primary-color);
+}
+.btn-right{
+    color: var(--primary-color);
 }
 .img-certi1{
    width: auto;
    height: 105px;
-   transition: .5s ease transform;
    outline: none;
 }
 .img-certi2{
     width: auto;
    height: 105px;
-   transition: .5s ease transform;
    outline: none;
 }
 .img-certi3{
     width: 105px;
     height: auto;
-    transition: .5s ease transform;
     outline: none;
 }
 .img-certi4{
     width: 105px;
     height: auto;
-    transition: .5s ease transform;
     outline: none;
 }
 .img-certi5{
     width: 105px;
     height: auto;
-    transition: .5s ease transform;
     outline: none;
 }
 .img-certi6{
     width: 105px;
     height: auto;
-    transition: .5s ease transform;
     outline: none;
-}
-.img-certi1:hover, .img-certi2:hover, .img-certi3:hover, .img-certi4:hover, .img-certi5:hover, .img-certi6:hover{
-    transform: scale(1.2);
 }
 
 /*-----------POPUP------------*/
@@ -460,11 +485,16 @@
     height: 600px;
     padding: 15px;
     display: flex;
+    justify-content: space-between;
 
     /*PARA ANIMACION*/
     transition: .3s ease all;
     transform: scale(0.7);
-    opacity: 0;   
+    opacity: 0;
+}
+.popup1.active, .popup2.active, .popup3.active, .popup4.active, .popup5.active, .popup6.active{
+    opacity: 1;
+    transform: scale(1);
 }
 .popup1 .btn-cerrar-popup, .popup2 .btn-cerrar-popup, .popup3 .btn-cerrar-popup, .popup4 .btn-cerrar-popup, .popup5 .btn-cerrar-popup, .popup6 .btn-cerrar-popup {
 	font-size: 20px;
@@ -513,8 +543,523 @@
 }
 
 
-/*------------ANIMACIONES POPUP-------------*/
-.popup1.active, .popup2.active, .popup3.active, .popup4.active, .popup5.active, .popup6.active{
-    opacity: 1;
-    transform: scale(1);
+/*------------- RESPONSIVE MACBOOK PRO----------------------------*/
+@media only screen and (min-width: 1440PX){
+    .btn-certifications:hover{
+        transform: scale(1.2);
+        transition: .5s ease transform;
+    }
+}
+
+/*------------- RESPONSIVE IPAD----------------------------*/
+
+@media only screen and (min-width: 541px) and (max-width: 1199px) and (orientation:landscape){
+    .text-certi{
+        height: 100% !important;
+    }
+    /* .nav-bar{
+        display: none;
+    } */
+}
+@media only screen and (min-width: 541px) and (max-width: 1199px){
+
+    /*HEADER*/
+    .container{
+        width: 100%;
+    }
+    .container-navbar{
+        width: 100%;
+        padding: 0 10px;
+    }
+    .nav-bar{
+        display: none;
+    }
+    .products-list{
+        display: none;
+    }
+    .menu-expand-head{
+        display: block;
+    }
+
+    /*WE ARE*/
+    .subcontainer-weare{
+        width: 700px;
+    }
+    .container-img-weare{
+        display: none;
+    }
+
+    /*RECOMMENDS*/
+    .subcontainer-recommendations{
+        width: 700px;
+        overflow-x: hidden;
+    }
+    .title-recommendations{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .title-recommendations img{
+        margin: 0;
+    }
+    .container-products-recommends{
+        width: 700px;
+    }
+    .product-recommend{
+        width: 165px;
+        height: 240px;
+    }
+    .product-recommend img{
+        width: 145px;
+        height: 220px;
+    }
+
+    /*NEWS*/
+    .subcontainer-news{
+        width: 700px;
+        justify-content: center;
+    }
+    .container-card-news{
+        display: none;
+    }
+    .container-information-news{
+        width: 700px;
+    }
+
+    /*CERTIFICATIONS*/
+    .title-certifications h2::after, .title-certifications h2::before{
+        display: none;
+    }
+    .subcontainer-img-certifications{
+        width: 700px;
+        display: flex;
+        justify-content: center;
+    }
+    .popup1, .popup2, .popup3, .popup4, .popup5, .popup6{
+        width: 650px !important;
+        height: 500px !important;
+    }
+    .cont-img{
+        height: 100%;
+    }
+    .img-certificado-height{
+        height: 70% !important;
+    }
+    .text-certi{
+        overflow-y: scroll;
+        height: 400px;
+    }
+}
+
+/*------------- RESPONSIVE MOBILE (HORIZONTAL)----------------------------*/
+@media only screen and (max-width: 915px) and (orientation:landscape){
+    .container-head{
+        height: 120vh;
+    }
+    .title-header h1{
+        font-size: 50px;
+    }
+
+    .extension, .extension-rotated{
+        display: none !important;
+    }
+    .extension-responsive, .extension-rotated-responsive{
+        display: block !important;
+    }
+
+    .popup1, .popup2, .popup3, .popup4, .popup5, .popup6{
+        height: 300px !important;
+        width: 600px;
+    }
+    .cont-img{
+        height: 100%;
+    }
+    .img-certificado-height{
+        height: 90% !important;
+    }
+    .title-certi{
+        /* font-size: 34px; */
+        padding-bottom: 5px;
+    }
+    .text-certi{
+        overflow-y: scroll !important;
+        height: 200px;
+    }
+    .popup1 .btn-cerrar-popup, .popup2 .btn-cerrar-popup, .popup3 .btn-cerrar-popup, .popup4 .btn-cerrar-popup, .popup5 .btn-cerrar-popup, .popup6 .btn-cerrar-popup {
+        height: 20px;
+        -webkit-tap-highlight-color: transparent;
+    }
+}
+/*------------- RESPONSIVE MOBILE----------------------------*/
+@media only screen and (width: 540px){
+    .btn-left{
+        left: 50px !important;
+        -webkit-tap-highlight-color: transparent;
+    }
+    .btn-right{
+        right: 50px !important;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .img-content{
+        margin-left: -165px !important;
+    }
+
+    .img-certificado-height{
+        height: 80% !important;
+    }
+    .img-certificado-width{
+        width: 55% !important;
+    }
+}
+@media only screen and (max-width: 540px){
+
+    .img-title{
+        height: 80px !important;
+    }
+
+    /*HEADER*/
+    .container{
+        width: 100%;
+    }
+    .container-navbar{
+        width: 100%;
+        padding: 0 10px;
+    }
+    .nav-bar{
+        display: none;
+    }
+    .products-list{
+        display: none;
+    }
+    .menu-expand-head{
+        display: block;
+    }
+    .title-header{
+        width: 350px;
+    }
+    .title-header h1{
+        font-size: 40px;
+    }
+    .subtext-header{
+        width: 350px;
+    }
+    .subtext-header h2{
+        font-size: 20px;
+    }
+
+    /*WE ARE*/
+    .subcontainer-weare{
+        width: 350px;     
+    }
+    .container-img-weare{
+        display: none;
+    }
+    .information-weare{
+        width: 350px;
+    }
+    .title-weare h1{
+        font-size: 34px;
+        margin-right: 5px;
+    }
+    .text-weare p{
+        font-size: 20px;
+    }
+
+    /*RECOMMENDS*/
+    .extension, .extension-rotated{
+        display: none !important;
+    }
+    .extension-responsive, .extension-rotated-responsive{
+        display: block !important;
+    }
+    .subcontainer-recommendations{
+        width: 350px;
+    }
+    .title-recommendations{
+        flex-direction: column;
+    }
+    .title-recommendations img{
+        margin: 0;
+    }
+    .title-recommendations h1{
+        font-size: 34px;
+    }
+    .container-products-recommends{
+        width: 350px;
+    }
+    .product-recommend{
+        width: 165px;
+        height: 240px;
+    }
+    .product-recommend img{
+        width: 145px;
+        height: 220px;
+    }
+
+    /*NEWS*/
+    .subcontainer-news{
+        width: 350px;
+    }
+    .container-card-news{
+        display: none;
+    }
+    .title-news img{
+        margin-right: 5px;
+        padding: 0;
+    }
+    .title-news h1{
+        font-size: 34px;
+    }
+    .text-news p{
+        font-size: 20px;
+    }
+
+    /*CERTIFICATIONS*/
+    .title-certifications{
+        width: 350px;
+    }
+    .title-certifications h2{
+        font-size: 34px;
+        margin: 0;
+    }
+    .title-certifications h2::after, .title-certifications h2::before{
+        display: none;
+    }
+    .container-img-certifications{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        align-items: center;
+    }
+    .subcontainer-img-certifications{
+        width: 330px;
+        overflow-x: hidden;
+    }
+    .img-content{
+        display: flex;
+        /*DEPENDIENDO DE CUANTAS CERTIFICAIONES HAYA, ASI MISMO TOCA VARIAR ESTE TAMAÑO*/
+        width: 300%;
+        margin-left: -165px;
+        gap: 15px;
+        height: 180px;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .btn-certifications{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        border: 2px solid var(--gray-color);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+        outline: none;
+        width: 150px;
+        height: 125px;
+    }
+    .btn-slider{
+        display: block !important;
+        position: absolute;
+        top: 50%;
+        width: 40px;
+        height: 40px;
+        font-size: 40px;
+        transform: translateY(-50%);
+        text-align: center;
+        cursor: pointer;     
+    }
+    .btn-left{
+        left: 0px;
+        -webkit-tap-highlight-color: transparent;
+    }
+    .btn-right{
+        right: 0px;
+        -webkit-tap-highlight-color: transparent;
+    }
+    .img-certi1{
+        height: 80px;
+    }
+    .img-certi2{
+        height: 80px;
+    }
+    .img-certi3{
+        width: 80px;
+    }
+    .img-certi4{
+        width: 80px;
+    }
+    .img-certi5{
+        width: 80px;
+    }
+    .img-certi6{
+        width: 80px;
+    }
+    .popup1, .popup2, .popup3, .popup4, .popup5, .popup6{
+        height: 600px;
+        width: 80%;
+        display: flex;
+        flex-direction: column-reverse !important;
+    }
+    .cont-img{
+        width: 100%;
+        height: 250px;
+    }
+    .cont-text{
+        width: 100%;
+        margin: 0;
+    }
+    .title-certi{
+        font-size: 34px;
+        padding-bottom: 5px;
+    }
+    .text-certi{
+        font-size: 18px;
+        width: 100%;
+        height: 235px;
+        overflow-y: scroll;
+    }
+    .img-certificado-height{
+        height: 80%;
+    }
+    .img-certificado-width{
+        width: 70%;
+    }
+    .popup1 .btn-cerrar-popup, .popup2 .btn-cerrar-popup, .popup3 .btn-cerrar-popup, .popup4 .btn-cerrar-popup, .popup5 .btn-cerrar-popup, .popup6 .btn-cerrar-popup {
+        height: 20px;
+        -webkit-tap-highlight-color: transparent;
+    }
+}
+
+/*------------- RESPONSIVE FOLD----------------------------*/
+@media only screen and (width: 280px){
+
+    /*HEADER*/
+    .menu-expand-head{
+        font-size: 30px;
+    }
+    .title-header{
+        width: 260px;
+    }
+    .title-header h1{
+        font-size: 34px;
+    }
+    .subtext-header{
+        width: 260px;
+    }
+    .btn-fruandes{
+        height: 50px !important;
+        width: 200px !important;
+        font-size: 15px !important;
+    }
+
+    /*WE ARE*/
+    .information-weare{
+        width: 260px;
+    }
+    .title-weare{
+        flex-direction: column;
+    }
+    .title-weare h1{
+        margin: 0;
+        font-size: 30px;
+    }
+    .title-weare img{
+        height: 60px !important;
+    }
+    .text-weare{
+        padding: 15px 0;
+    }
+    .text-weare p{
+        font-size: 18px;
+    }
+
+    /*RECOMMENDS*/
+    .subcontainer-recommendations{
+        width: 260px;
+    }
+    .title-recommendations img{
+        height: 60px !important;
+    }
+    .title-recommendations h1{
+       font-size: 24px;
+    }
+    .container-products-recommends{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    /*NEWS*/
+    .subcontainer-news{
+        width: 260px;
+    }
+    .title-news img{
+        height: 60px !important;
+    }
+    .title-news h1{
+        font-size: 30px;
+    }
+    .text-news{
+        padding: 15px 0;
+    }
+    .text-news p{
+        font-size: 18px;
+    }
+
+    /*CERTIFICATION*/
+    .subcontainer-certifications{
+        width: 260px;
+    }
+    .title-certifications{
+        width: 100%;
+    }
+    .title-certifications h2{
+        font-size: 30px !important;
+    }
+    .subcontainer-img-certifications{
+        margin-top: 10px;
+        width: 180px;
+    }
+    .img-content{
+        height: 130px;
+        width: 655% !important;
+        margin-left: -200px;
+        gap: 20px !important;
+    } 
+    .btn-certifications{
+        height: 110px;
+        width: 180px !important;
+        margin-left: 0 !important;
+    }
+    .popup1, .popup2, .popup3, .popup4, .popup5, .popup6{
+        height: 400px;
+        width: 80%;
+        display: flex;
+        flex-direction: column-reverse !important;
+    }
+    .cont-img{
+        height: 150px;
+    }
+    .cont-text h1{
+        font-size: 24px;
+    }
+    .cont-text p{
+        font-size: 15px;
+    }
+    .cont-text a{
+        height: 18px !important;
+    }
+    .text-certi{
+        height: 155px;
+        width: 100%;
+    }
+    .img-certificado-width{
+        width: 60% !important;
+    }
 }

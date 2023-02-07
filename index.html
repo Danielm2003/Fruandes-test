@@ -16,6 +16,7 @@
             <a href="/index.html" target="_parent">
                 <img loading="lazy" src="/img/logo-blanco.png" alt="" class="logo-header">
             </a>
+            <i class="fa-solid fa-bars menu-expand-head"></i>
             <nav class="nav-bar">
                 <ul class="list-navbar">
                     <li class="container-products-menu">
@@ -90,6 +91,7 @@
     </section>
 
     <img loading="lazy" src="./img/header-extension2.png" alt="extension" class="extension">
+    <img loading="lazy" src="./img/header-extension2-responsive.png" alt="extension" class="extension extension-responsive">
 
     <section class="container-recommendations"> 
         <div class="subcontainer-recommendations">
@@ -100,7 +102,7 @@
             <div class="container-products-recommends">
                 <div class="product-recommend">
                     <a href="shop.html" class="">
-                        <img loading="lazy" src="./img/products/sub1.jpg" class="img-product-recomend">
+                        <img loading="lazy" src="./img/products/sub1.jpg" class="img-product-recomend down">
                         <img loading="lazy" src="./img/products/product1.jpg"class="img-product-recomend top">
                     </a>
                 </div>
@@ -110,18 +112,18 @@
                         <img loading="lazy" src="./img/products/product2.jpg"class="img-product-recomend top">
                     </a>
                 </div>
-                <div class="product-recommend">
+                <!-- <div class="product-recommend">
                     <a href="shop.html" class="">
                         <img loading="lazy" src="./img/products/sub3.jpg" class="img-product-recomend">
                         <img loading="lazy" src="./img/products/product3.jpg"class="img-product-recomend top">
                     </a>
-                </div>
-                <div class="product-recommend">
+                </div> -->
+                <!-- <div class="product-recommend">
                     <a href="shop.html" class="">
                         <img loading="lazy" src="./img/products/sub4.jpg" class="img-product-recomend">
                         <img loading="lazy" src="./img/products/product4.jpg"class="img-product-recomend top">
                     </a>
-                </div>
+                </div> -->
             </div>
             <a class="container-btn" href="shop.html" target="_parent">
                 <button type="button" class="btn-fruandes raleway700">GO TO SHOP</button>
@@ -130,7 +132,8 @@
     </section>
 
     <img loading="lazy" src="./img/header-extension2.png" alt="extension" class="extension-rotated">
-
+    <img loading="lazy" src="./img/header-extension2-responsive.png" alt="extension" class="extension-rotated extension-rotated-responsive">
+    
     <section class="container-news">
         <div class="subcontainer-news">
             <div class="container-information-news">
@@ -139,7 +142,7 @@
                     <h1 class="raleway900">NEWS</h1>
                 </div> 
                 <div class="text-news">
-                    <p class="raleway500">Learn more about the latest news about our farmers and the Fruandes community ir our blog.</p>
+                    <p class="raleway500">Learn more about the latest news about our farmers and the Fruandes community in our blog.</p>
                 </div>
                 <a class="container-btn" href="blog.html" target="_parent">
                     <button type="button" class="btn-fruandes raleway700">GO TO BLOG</button>
@@ -170,25 +173,41 @@
                 <h2 class="lines-effect raleway900">OUR CERTIFICATIONS</h2>
             </div>
             <div class="container-img-certifications">
-                <div class="img-content">
-                    <button type="button" id="imgcert1" class="btn-certifications">
-                        <img loading="lazy" class="img-certi1" src="./img/certificado1.png" alt="">
-                    </button>
-                    <button type="button" id="imgcert2" class="btn-certifications">
-                        <img loading="lazy" class="img-certi2" src="./img/certificado2.png" alt="">
-                    </button>
-                    <button type="button" id="imgcert3" class="btn-certifications">
-                        <img loading="lazy" class="img-certi3" src="./img/certificado3.png" alt="">
-                    </button>
-                    <button type="button" id="imgcert4" class="btn-certifications">
-                        <img loading="lazy" class="img-certi4" src="./img/certificado4.png" alt="">
-                    </button>
-                    <button type="button" id="imgcert5" class="btn-certifications">
-                        <img loading="lazy" class="img-certi5" src="./img/certificado5.png" alt="">
-                    </button>
-                    <button type="button" id="imgcert6" class="btn-certifications">
-                        <img loading="lazy" class="img-certi6" src="./img/certificado6.png" alt="">
-                    </button>
+                <div class="container-img-certifications"> 
+                    <div class="subcontainer-img-certifications">
+                        <div class="img-content" id="slider-certification">
+                            <div id="imgcert1" class="btn-certifications">
+                                <img loading="lazy" class="img-certi1" src="./img/certificado1.png" alt="">
+                            </div>
+                            <div id="imgcert2" class="btn-certifications">
+                                <img loading="lazy" class="img-certi2" src="./img/certificado2.png" alt="">
+                            </div>
+                            <div id="imgcert3" class="btn-certifications">
+                                <img loading="lazy" class="img-certi3" src="./img/certificado3.png" alt="">
+                            </div>
+                            <div id="imgcert4" class="btn-certifications">
+                                <img loading="lazy" class="img-certi4" src="./img/certificado4.png" alt="">
+                            </div>
+                            <div id="imgcert5" class="btn-certifications">
+                                <img loading="lazy" class="img-certi5" src="./img/certificado5.png" alt="">
+                            </div>
+                            <div id="imgcert6" class="btn-certifications">
+                                <img loading="lazy" class="img-certi6" src="./img/certificado6.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-slider btn-left" id="slider-left2" style="opacity: 0.8;">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="btn-slider btn-left" id="slider-leftCert">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="btn-slider btn-right" id="slider-right2" style="opacity: 0.8;">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div class="btn-slider btn-right" id="slider-rightCert">
+                    <i class="fa-solid fa-angle-right"></i>
                 </div>
             </div>  
         </div>
@@ -297,10 +316,12 @@
         </div>
     </div>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
         <iframe class="footer-import" src="./layout/footer.html" frameborder="0"></iframe>
-    </footer>
+    </footer> -->
 
-    <script src="menu-header.js"></script>
+    <script src="./js/popup-cert.js"></script>
+    <script src="./js/menu-header.js"></script>
+    <script src="./js/slider-cert.js"></script>
 </body>
 </html>
