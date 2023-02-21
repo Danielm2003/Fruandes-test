@@ -1,7 +1,6 @@
 /* LAS CLASES MAS USADAS SE ENCUENTRAN EN VARIABLES.CSS */
 
 /*-----------------OVERLAY DE INICIO----------*/
-/*-----------POPUP------------*/
 .overlayhome{
 	background: rgb(0, 0, 0, .3);
 	position: fixed;
@@ -55,15 +54,7 @@
 .text-popup{
     font-size: 24px;
     margin: 0 30px;
-    /* padding-bottom: 30px; */
 }
-/* .container-gif{
-    text-align: center;
-    height: auto;
-}
-.gif-popup{
-    height: 100%;
-} */
 
 
 /*---------------------HEADER--------------------*/
@@ -486,6 +477,10 @@
     transform: scale(1);
     transition: .5s ease transform;
 }
+.btn-certifications:hover{
+    transition: transform .5s ease;
+    transform: scale(1.2);
+}
 .btn-slider{
     display: none !important;
 }
@@ -525,6 +520,7 @@
     height: auto;
     outline: none;
 }
+
 
 /*-----------POPUP------------*/
 .overlay1, .overlay2, .overlay3, .overlay4, .overlay5, .overlay6 {
