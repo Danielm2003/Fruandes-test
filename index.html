@@ -11,6 +11,20 @@
     <title>Fruandes</title>
 </head>
 <body class="container">
+
+    <div class="overlayhome" id="overlayhome">
+        <div class="popuphome" id="popuphome">
+            <div class="popup-content">
+                <a href="" id="btn-cerrar-popuphome" class="btn-cerrar-popuphome"><i class="fas fa-times"></i></a>
+                <h1 class="raleway900 title-popup">LO SENTIMOS 😞</h1>
+                <p class="raleway500 text-popup">Este sitio aún se encuentra en construcción por lo que puedes encontrar muchos errores... Actualmente solo se encuentra adaptado para su vista en PC, estamos trabajando en su diseño para dispositivos mobiles, lamentamos las molestias.</p>
+                <!-- <div class="container-gif">
+                    <img src="https://media.giphy.com/media/3o6EhNnoVpx2LbfVnO/giphy.gif" alt="Criying-Gif" class="gif-popup">
+                </div> -->
+            </div>
+        </div>
+    </div>
+
     <section class="container-head">
         <div class="container-navbar">
             <a href="/index.html" target="_parent">
@@ -323,5 +337,23 @@
     <script src="./js/popup-cert.js"></script>
     <script src="./js/menu-header.js"></script>
     <script src="./js/slider-cert.js"></script>
+
+    <script>
+        let overlayHome = document.getElementById("overlayhome"),
+        popupHome = document.getElementById("popuphome"),
+        btnCerrarPopupHome = document.getElementById("btn-cerrar-popuphome");
+
+        btnCerrarPopupHome.addEventListener('click', function(e){
+            console.log("cierra")
+            e.preventDefault();
+            
+            popupHome.classList.add('cerrar');
+            overlayHome.classList.add('cerrar');
+
+            setTimeout(function(){
+                overlayHome.style.display = "none"
+            }, 300);
+        });
+    </script>
 </body>
 </html>

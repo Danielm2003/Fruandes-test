@@ -1,5 +1,71 @@
 /* LAS CLASES MAS USADAS SE ENCUENTRAN EN VARIABLES.CSS */
 
+/*-----------------OVERLAY DE INICIO----------*/
+/*-----------POPUP------------*/
+.overlayhome{
+	background: rgb(0, 0, 0, .3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    z-index: 10;
+}
+.overlayhome.cerrar{
+    opacity: 0;
+    transition: opacity ease-in .3s;
+}
+.popuphome.cerrar{
+    transform: scale(0.7);
+    transition: transform ease-in .3s;
+}
+.popuphome{
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    width: 700px;
+    height: auto;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.popuphome .btn-cerrar-popuphome{
+	font-size: 30px;
+	display: block;
+	text-align: right;
+	transition: .3s ease all;
+	color: var(--second-gray-color);
+    width: fit-content;
+    float: right !important;
+    height: 0px;
+}
+.popuphome .btn-cerrar-popuphome:hover{
+    color: var(--primary-color);
+}
+
+.title-popup{
+    font-size: 60px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.text-popup{
+    font-size: 24px;
+    margin: 0 30px;
+    /* padding-bottom: 30px; */
+}
+/* .container-gif{
+    text-align: center;
+    height: auto;
+}
+.gif-popup{
+    height: 100%;
+} */
+
+
 /*---------------------HEADER--------------------*/
 .container-head{
     background-image: url(../img/fondo1.png);
@@ -547,6 +613,22 @@
 /*----------RESPONSIVE MOBILE VERSION--------*/
 @media only screen and (max-width: 540px){
 
+    .popuphome{
+        width: 350px;
+        height: auto;
+        padding: 15px;
+    }
+    .title-popup{
+        font-size: 34px;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    .text-popup{
+        font-size: 24px;
+        margin: 0 30px;
+        /* padding-bottom: 30px; */
+    }
+
     .img-title{
         height: 80px !important;
     }
@@ -804,6 +886,25 @@
 
 /*----------RESPONSIVE MOBILE VERSION (FOLD)----------*/
 @media only screen and (width: 280px){
+
+    .popuphome{
+        width: 260px;
+        height: auto;
+        padding: 15px;
+    }
+    .popuphome .btn-cerrar-popuphome{
+        font-size: 24px;
+    }
+    .title-popup{
+        font-size: 24px;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    .text-popup{
+        font-size: 18px;
+        margin: 0 30px;
+        /* padding-bottom: 30px; */
+    }
 
     /*HEADER*/
     .logo-header{
