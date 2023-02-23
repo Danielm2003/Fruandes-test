@@ -56,7 +56,9 @@
     margin: 0 30px;
 }
 
-
+.container-menu-expand{
+    display: none;
+}
 /*---------------------HEADER--------------------*/
 .container-head{
     background-image: url(https://i.postimg.cc/d3YfBrc6/fondo1.png);
@@ -771,7 +773,6 @@
         background-color: #fff;
         margin: 0;
         padding: 0;
-        cursor: pointer;
         outline: none;
         width: 150px;
         height: 125px;
@@ -848,12 +849,12 @@
         -webkit-tap-highlight-color: transparent;
     }
     .footer{
-        height: 678px !important;
-        background-color: #1d2413;
+        height: 680px !important;
+        background-color: var(--gray-color);
     }
     .footer-import{
-        height: 678px !important;
-        background-color: #6aa814;
+        height: 680px !important;
+        background-color: var(--gray-color);
     }
 }
 
@@ -1138,8 +1139,27 @@
         overflow-y: scroll;
         height: 400px;
     }
+
+    .footer{
+        height: 293px !important;
+        background-color: var(--gray-color);
+    }
+    .footer-import{
+        height: 293px !important;
+        background-color: var(--gray-color);
+    }
 }
 
+
+
+@media only screen and (max-width: 1024px){
+    .container-menu-expand{
+        display: block;
+    }
+    .container-menu-expand.disabled{
+        display: none;
+    }
+}
 
 
 
@@ -1152,5 +1172,15 @@
     .footer-import{
         height: 295px !important;
         background-color: #6aa814;
+    }
+}
+@media only screen and (width: 820px){
+    .footer{
+        height: 275px !important;
+        background-color: var(--gray-color);
+    }
+    .footer-import{
+        height: 275px !important;
+        background-color: var(--gray-color);
     }
 }

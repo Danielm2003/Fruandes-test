@@ -6,6 +6,9 @@ let menuHome = document.getElementById("menu")
 /*HEADER PAGES*/
 let btnMenuHead = document.getElementById("button-menu-products")
 let menuProducts = document.getElementById("menu-products") 
+
+let btnMenuExpandHead = document.getElementById("menu-expand-head")
+let menuExpandHead = document.getElementById("container-menu-expand")
     
 // -------------ABRIR MENU HEAD----------------
 function abrirMenu(){
@@ -37,3 +40,25 @@ function abrirMenu2(){
         btnMenuHead.style.padding = "0px 0px 0px 8px"
     }
 }
+
+// function menuExpand(){
+    
+    
+
+// }
+
+btnMenuExpandHead.addEventListener('click', function(){
+    // menuExpand()
+    if (menuExpandHead.className.includes('disabled')){
+        menuExpandHead.classList.remove('disabled');
+        console.log("abrir menu")
+    }
+    else{
+        console.log("cerrar menu")
+        menuExpandHead.classList.add('disabled');
+    }
+    // if (menuExpandHead.className == "container-menu-expand"){
+    //     console.log("abrir menu")
+    //     menuExpandHead.classList.add('disabled');
+    // }
+})
