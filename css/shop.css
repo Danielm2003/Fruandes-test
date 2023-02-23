@@ -21,22 +21,17 @@
 .container-logo-shop{
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 .container-logo-shop img{
     height: 130px;
 }
-
 .container-text-shop{
     height: 305px;
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 .text-shop{
-    display: grid;
-    justify-self: center;
     align-self: center; 
     width: 100%;
 }
@@ -53,4 +48,33 @@
 }
 .container-btn{
     margin: 30px auto;
+}
+
+@media only screen and (max-width: 1024px){
+
+    .container-shop{
+        width: 80%;
+        height: auto;
+        padding: 30px;
+    }
+    .container-logo-shop img{
+        height: 100px;
+    }
+    .container-text-shop{
+        height: auto;
+        margin: 30px 0 0 0;
+    }
+    .text-shop h1{
+        font-size: 40px;
+    }
+    .text-shop h3{
+        font-size: 24px;
+    }
+    .container-btn{
+        margin: 30px 0 0 0;
+    }
+    .btn-fruandes{
+        height: 40px;
+        width: 180px;
+    }
 }

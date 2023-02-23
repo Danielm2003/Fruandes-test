@@ -97,33 +97,25 @@ a{
 }
 
 /* ---------------------FOOTER-------------- */
-.footer{
-    position: relative;
-    height: 275px !important;
-}
 .footer-import{
-    position: absolute;
     width: 100% !important;
-    height: 100%;
+    height: auto;
 }
 
 
 /* --------------------HEADER------------------------ */
-.header{
-    height: 420px !important;
-}
 .header-import{
     width: 100% !important;
-    height: 100%;
+    height: auto;
 }
 
-.header-fruit{
+/* .header-fruit{
     height: 245px !important;
 }
 .header-import-fruit{
     width: 100%;
     height: 100%;
-}
+} */
 
 /*-----------------CLASES MAS USADAS----------------*/
 .container-btn{

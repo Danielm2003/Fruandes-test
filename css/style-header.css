@@ -1,4 +1,12 @@
 
+
+.container-head-responsive{
+    display: none;
+}
+.container-menu-expand{
+    display: none;
+}
+
 /* HEADER */
 .container-head{
     background-color: #fff;
@@ -109,10 +117,6 @@
 .logo{
     height: 90px;
 }
-
-/* .container-img{
-    height: 310px;
-} */
 .container-img{
     background-image: url('https://i.postimg.cc/fWFkvQ5J/fondo3.jpg');
     background-repeat: no-repeat;
@@ -137,4 +141,51 @@
     width: 100%;
     position: relative;
     z-index: 1;
+}
+.extension-responsive{
+    display: none;
+}
+
+
+/**/
+@media  only screen and (max-width: 1024px){
+
+    .container-head-responsive{
+        display: block;
+    }
+    .container-menu-expand{
+        display: block;
+    }
+    .container-menu-expand.disabled{
+        display: none;
+    }
+    .container-head{
+        display: none;
+    }
+    .container-head-responsive{
+        background-color: #fff;
+        height: 110px;
+        width: 100%;
+    }
+    .container-navbar{
+        background-color: #fff;
+        margin: 0 10px;
+        width: auto;
+        display: flex;
+        align-items: center;
+    }
+    .container-navbar img{
+        height: 90px;
+    }
+    .menu-expand-head{
+        color: var(--primary-color);
+        font-size: 34px;
+    }
+
+    .extension-responsive{
+        display: flex;
+        width: 100%;
+        height: 50px;
+    }
+
 }

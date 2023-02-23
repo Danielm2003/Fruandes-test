@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://i.postimg.cc/sXYMqdbz/logo-fruandes.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/9c92b85ed8.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/variables.css">
     <title>Fruandes</title>
@@ -69,7 +70,7 @@
             <a href="/index" target="_parent">
                 <img loading="lazy" src="https://i.postimg.cc/CL9QPGN0/logo-blanco.png" alt="" class="logo-header">
             </a>
-            <i class="fa-solid fa-bars menu-expand-head" id="menu-expand-head"></i>
+            <i class="fa-solid fa-bars menu-expand-head" id="menu-expand-head" onclick="menuExpand()"></i>
             <nav class="nav-bar">
                 <ul class="list-navbar">
                     <li class="container-products-menu">
@@ -370,7 +371,9 @@
     </div>
 
     <footer class="footer">
-        <iframe class="footer-import" src="layout/footer.html" frameborder="0"></iframe>
+        <script>
+            $(".footer").load("layout/footer.html");
+        </script>
     </footer>
 
     <script src="js/popup-cert.js"></script>

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/9c92b85ed8.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <link rel="shortcut icon" href="https://i.postimg.cc/sXYMqdbz/logo-fruandes.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/variables.css">
     <link rel="stylesheet" href="../css/products.css">
@@ -131,7 +132,9 @@
     </div>
 
     <footer class="footer">
-        <iframe class="footer-import" src="../layout/footer.html" frameborder="0"></iframe>
+        <script>
+            $(".footer").load("../layout/footer.html");
+        </script>
     </footer>
 
     <script src="../js/menu-header.js"></script>

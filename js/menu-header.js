@@ -41,14 +41,7 @@ function abrirMenu2(){
     }
 }
 
-// function menuExpand(){
-    
-    
-
-// }
-
-btnMenuExpandHead.addEventListener('click', function(){
-    // menuExpand()
+function menuExpand(){
     if (menuExpandHead.className.includes('disabled')){
         menuExpandHead.classList.remove('disabled');
         console.log("abrir menu")
@@ -57,8 +50,4 @@ btnMenuExpandHead.addEventListener('click', function(){
         console.log("cerrar menu")
         menuExpandHead.classList.add('disabled');
     }
-    // if (menuExpandHead.className == "container-menu-expand"){
-    //     console.log("abrir menu")
-    //     menuExpandHead.classList.add('disabled');
-    // }
-})
+}

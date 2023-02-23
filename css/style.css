@@ -59,6 +59,9 @@
 .container-menu-expand{
     display: none;
 }
+.menu-expand-head{
+    display: none;
+}
 /*---------------------HEADER--------------------*/
 .container-head{
     background-image: url(https://i.postimg.cc/d3YfBrc6/fondo1.png);
@@ -848,14 +851,6 @@
         height: 20px;
         -webkit-tap-highlight-color: transparent;
     }
-    .footer{
-        height: 680px !important;
-        background-color: var(--gray-color);
-    }
-    .footer-import{
-        height: 680px !important;
-        background-color: var(--gray-color);
-    }
 }
 
 /*----------RESPONSIVE MOBILE 2----------*/
@@ -868,15 +863,6 @@
     }
     .img-certificado-width{
         width: 50%;
-    }
-
-    .footer{
-        height: 657px !important;
-        background-color: #1d2413;
-    }
-    .footer-import{
-        height: 657px !important;
-        background-color: #6aa814;
     }
 }
 
@@ -1038,15 +1024,6 @@
     .img-certificado-width{
         width: 60% !important;
     }
-
-    .footer{
-        height: 672px !important;
-        background-color: #1d2413;
-    }
-    .footer-import{
-        height: 672px !important;
-        background-color: #6aa814;
-    }
 }
 
 
@@ -1139,15 +1116,6 @@
         overflow-y: scroll;
         height: 400px;
     }
-
-    .footer{
-        height: 293px !important;
-        background-color: var(--gray-color);
-    }
-    .footer-import{
-        height: 293px !important;
-        background-color: var(--gray-color);
-    }
 }
 
 
@@ -1158,29 +1126,5 @@
     }
     .container-menu-expand.disabled{
         display: none;
-    }
-}
-
-
-
-/*-----------FOOTERS---------*/
-@media only screen and (width: 1024px){
-    .footer{
-        height: 295px !important;
-        background-color: #1d2413;
-    }
-    .footer-import{
-        height: 295px !important;
-        background-color: #6aa814;
-    }
-}
-@media only screen and (width: 820px){
-    .footer{
-        height: 275px !important;
-        background-color: var(--gray-color);
-    }
-    .footer-import{
-        height: 275px !important;
-        background-color: var(--gray-color);
     }
 }

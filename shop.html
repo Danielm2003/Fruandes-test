@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <link rel="shortcut icon" href="https://i.postimg.cc/sXYMqdbz/logo-fruandes.png" type="image/x-icon">
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/shop.css">
     <title>Fruandes</title>
 </head>
 <body>
-    <header class="header">
-        <iframe class="header-import" src="layout/header.html" frameborder="0"></iframe>
-    </header>
+    <div class="header-import" style="height: auto;">
+        <script>
+            $(".header-import").load("layout/header.html");
+        </script>
+    </div>
 
     <div class="container-message">
         <div class="container-shop">
@@ -33,7 +36,9 @@
     </div>
     
     <footer class="footer">
-        <iframe class="footer-import" src="layout/footer.html" frameborder="0"></iframe>
+        <script>
+            $(".footer").load("layout/footer.html");
+        </script>
     </footer>
 </body>
 </html>
