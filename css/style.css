@@ -60,7 +60,7 @@
     display: none;
 }
 .menu-expand-head{
-    display: none;
+    display: none !important;
 }
 /*---------------------HEADER--------------------*/
 .container-head{
