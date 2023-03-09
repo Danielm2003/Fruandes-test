@@ -58,9 +58,10 @@
 
 .container-menu-expand{
     display: none;
+    background-color: pink;
 }
 .menu-expand-head{
-    display: none !important;
+    display: none;
 }
 /*---------------------HEADER--------------------*/
 .container-head{
@@ -613,6 +614,10 @@
 
 /*----------RESPONSIVE MOBILE VERSION--------*/
 @media only screen and (max-width: 540px){
+
+    .menu-expand-head{
+        display: block !important;
+    }
 
     .popuphome{
         width: 350px;

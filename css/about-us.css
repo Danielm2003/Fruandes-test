@@ -29,7 +29,9 @@
 }
 
 .extension{
-    display: flex;
+    background-color: var(--gray-color);
+}
+.extension-rotated{
     background-color: var(--gray-color);
 }
 
@@ -86,10 +88,6 @@
 }
 .container-text-story{
     background-color: #fff;
-}
-
-.extension-rotated{
-    background-color: var(--gray-color);
 }
 
 .title-team{

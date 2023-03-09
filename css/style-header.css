@@ -136,14 +136,16 @@
     left: 0;
     right: 0;
 }
-.extension{
+.extension-responsive{
+    display: none;
+}
+.extension-header{
     height: 60px;
+    display: flex;
     width: 100%;
     position: relative;
     z-index: 1;
-}
-.extension-responsive{
-    display: none;
+    background-color: tomato !important;
 }
 
 

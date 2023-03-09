@@ -89,6 +89,13 @@ a{
     display: flex;
     width: 100%;
 }
+.extension-header{
+    height: 60px;
+    display: flex;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
 .extension-rotated{
     display: flex;
     height: 60px;
